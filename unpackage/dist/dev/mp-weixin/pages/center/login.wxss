@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.login_page .auth {
+  text-align: center;
+}
+.login_page .logo {
+  width: 400rpx;
+  height: 96rpx;
+  margin: 224rpx auto 40rpx;
+}
+.login_page .auth-title {
+  font-size: 44rpx;
+  color: #333;
+  font-weight: 500;
+}
+.login_page .auth-subtitle {
+  font-size: 28rpx;
+  color: #666;
+  margin: 22rpx 0 65rpx 0;
+}
+.login_page .auth-btn {
+  width: 630rpx !important;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #f7ad61;
+  color: #fff;
+  font-size: 32rpx;
+}
+.login_page .btn-login {
+  width: 630rpx !important;
+  line-height: 88rpx;
+  position: relative;
+  margin: 0;
+  font-size: 32rpx;
+  color: #fff;
+}
+.login_page .btn-login::after {
+  border: 0;
+}
+.login_page .login-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding: 30rpx 60rpx 0;
+  background-color: #fff;
+}
+.login_page .login-container .logo {
+    margin-top: 0;
+}
+.login_page .input-group {
+  background-color: #fff;
+}
+.login_page .input-line {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 96rpx;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-bottom: 1rpx solid #d9d9d9;
+}
+.login_page .input-line:first-child {
+  border-bottom: 1rpx solid #eee;
+}
+.login_page input {
+  width: 70%;
+  font-size: 32rpx;
+}
+.login_page .btn-inline {
+  position: relative;
+  height: 59rpx;
+  line-height: 59rpx;
+  font-size: 28rpx;
+  padding-left: 22rpx;
+  padding-right: 22rpx;
+  width: 180rpx;
+  background-color: #fff;
+}
+.login_page .btn-inline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9rpx;
+    height: 40rpx;
+    width: 1rpx;
+    background: #d9d9d9;
+}
+.login_page .btn-idle {
+  color: #f7ad61;
+}
+.login_page .btn-sent {
+  color: #555;
+}
+.login_page .tip {
+  line-height: 80rpx;
+  font-size: 22rpx;
+  color: #999;
+}
+.login_page .center {
+  text-align: center;
+}
+.login_page .btn-submit {
+  background-color: #f7ad61;
+}
+.login_page .disabled {
+  background-color: #ccc;
+}
+.login_page .navigator {
+  display: inline-block;
+  color: #0097ff;
+}
+.login_page .navigator-hover {
+  color: #0097ff;
+}
+.login_page .auth .link_btn {
+  margin: 40rpx auto 0;
+  width: 630rpx;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 88rpx;
+  height: 88rpx;
+  text-align: center;
+  border: 1rpx solid #f7ad61;
+  border-radius: 8rpx;
+  color: #f7ad61;
+}
+.login_page .verify-mask {
+  position: fixed;
+  pointer-events: auto;
+  z-index: 96;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.login_page .verify-mask .verify-bg {
+    z-index: 97;
+    position: fixed;
+    pointer-events: auto;
+    background-color: black;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.login_page .verify-mask .verify-modal {
+    position: relative;
+    z-index: 98;
+    padding-top: 80rpx;
+    position: fixed;
+    pointer-events: auto;
+    width: 550rpx;
+    height: 560rpx;
+    top: 280rpx;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 4rpx;
+    box-shadow: 2rpx 2rpx 100rpx rgba(0, 0, 0, 0.3);
+}
+.login_page .verify-mask .verify-modal .wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+}
+.login_page .verify-mask .verify-modal .wrapper .title {
+        font-size: 32rpx;
+        line-height: 32rpx;
+        margin-bottom: 18rpx;
+        color: #4e4e4e;
+        text-align: center;
+}
+.login_page .verify-mask .verify-modal .wrapper image {
+        width: 240rpx;
+        height: 80rpx;
+        border: 1rpx solid #ebebeb;
+}
+.login_page .verify-mask .verify-modal .wrapper .tip {
+        font-size: 24rpx;
+        line-height: 64rpx;
+        margin-bottom: 18rpx;
+        color: #a0a09f;
+}
+.login_page .verify-mask .verify-modal .wrapper .vCode-input {
+        width: 240rpx;
+        height: 70rpx;
+        font-size: 28rpx;
+        color: #888;
+        border: none;
+        border-bottom: 2rpx solid #d9d9d9;
+        text-align: center;
+        border-radius: 0;
+}
+.login_page .verify-mask .verify-modal .wrapper button {
+        width: 430rpx;
+        height: 90rpx;
+        line-height: 90rpx;
+        border: none;
+        color: #fff;
+        font-size: 34rpx;
+        margin-top: 50rpx;
+        border-radius: 10rpx;
+        background: #f7ad61;
+}
+
